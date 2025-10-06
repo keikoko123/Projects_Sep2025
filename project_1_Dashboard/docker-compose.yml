@@ -1,0 +1,47 @@
+services:
+  backend:
+    build: ./backend
+    # ports:
+    #   - "5000:5000"  # 移除埠映射，因為由 Nginx 代理。如需直接測試後端可取消註解
+    environment:
+      MONGO_URI: mongodb://mongodb:27017/socialmediadb
+      JWT_SECRET: your_jwt_secret_key
+      PORT: 5000
+    depends_on:
+      - mongodb
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+
+  frontend:
+    build: ./frontend
+    # ports:
+    #   - "3000:80"  # 移除埠映射，因為由 Nginx 代理。如需直接測試前端可取消註解
+    depends_on:
+      - backend
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    environment:
+      VITE_API_URL: http://backend:5000
+
+  mongodb:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+
+  nginx:
+    image: nginx:alpine  # 使用官方 Nginx 鏡像（alpine 版本更小）
+    ports:
+      - "80:80"  # Nginx 統一對外開放 80 埠
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro  # 掛載自訂配置文件（唯讀）
+    depends_on:
+      - frontend
+      - backend
+    restart: unless-stopped
+
+volumes:
+  mongodb_data:
