@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>公會出征表</title>
+ 
+</head>
+<body>
+    <div class="container">
+
+        <h1 contenteditable="true">是日HJ2Q成團員</h1>
+        <hr>
+        <h1>
+        <button id="saveButton" style="margin-top: 20px; padding: 10px 20px; cursor: pointer;">Save Changes</button>
+
+        </h1>
+        
+        <div class="day-nav">
+            <button class="day-btn" data-day="monday">Monday</button>
+            <button class="day-btn" data-day="tuesday">Tuesday</button>
+            <button class="day-btn" data-day="wednesday">Wednesday</button>
+            <button class="day-btn" data-day="thursday">Thursday</button>
+            <button class="day-btn" data-day="friday">Friday</button>
+            <button class="day-btn" data-day="saturday">Saturday</button>
+            <button class="day-btn active" data-day="sunday">Sunday</button>
+        </div>
+
+        <div id="sunday" class="day-content">
+            <div class="table-container">
+                <table>
+                <thead>
+                    <tr>
+                        <th>成員</th>
+                        <th>Char 1</th>
+                        <th>Char 2</th>
+                        <th>Char 3</th>
+                        <th>Char 4</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+
+                        <td>Ling</td>
+                        <td>大MT </td>
+                        <td >小MT</td>
+                        <td class="empty-cell">未分配</td>
+                        <td class="empty-cell">未分配</td>
+                    </tr>
+                    <tr>
+                        <td>1110211</td>
+                        <td>大MT</td>
+                        <td class="empty-cell">未分配</td>
+                        <td class="empty-cell">未分配</td>
+                        <td class="empty-cell">未分配</td>
+                    </tr>
+                    <tr>
+                        <td>Chovy</td>
+                        <td>大PR</td>
+                        <td>小PR</td>
+                        <td>物蘿</td>
+                        <td class="empty-cell">未分配</td>
+                    </tr>
+                    <tr>
+                        <td>Nic</td>
+                        <td>  PR</td>
+                        <td>LOLI.phy</td>
+                        <td class="empty-cell">未分配</td>
+                        <td class="empty-cell">未分配</td>
+                    </tr>
+                    <tr>
+                        <td>Alex</td>
+                        <td>PR</td>
+                        <td class="empty-cell">未分配</td>
+                        <td class="empty-cell">未分配</td>
+                        <td class="empty-cell">未分配</td>
+                    </tr>
+                    <tr>
+                        <td>Tabeee</td>
+                        <td>大魔劍SM</td>
+                        <td>大物劍SM</td>
+                        <td class="empty-cell">未分配</td>
+                        <td class="empty-cell">未分配</td>
+                    </tr>
+                    <tr>
+                        <td>Zutomayo</td>
+                        <td>魔劍SM</td>
+                        <td class="empty-cell">未分配</td>
+                        <td class="empty-cell">未分配</td>
+                        <td class="empty-cell">未分配</td>
+                    </tr>
+                    <tr>
+                        <td>Snow</td>
+                        <td>EL</td>
+                        <td>LOLI.phy</td>
+                        <td class="empty-cell">未分配</td>
+                        <td class="empty-cell">未分配</td>
+                    </tr>
+                    <tr>
+                        <td>TOBIHI</td>
+                        <td>大MC</td>
+                        <td>小MC</td>
+                        <td>FU</td>
+                        <td class="empty-cell">未分配</td>
+                    </tr>
+
+                    <tr>
+                        <td>YoungNight</td>
+                        <td>FU</td>
+                        <td class="empty-cell">未分配</td>
+                        <td class="empty-cell">未分配</td>
+                        <td class="empty-cell">未分配</td>
+                    </tr>
+                    <tr>
+                        <td>Java</td>
+                        <td>FU</td>
+                        <td>BM1</td>
+                        <td>BM2</td>
+                        <td>LOLI.matk</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+        <div id="monday" class="day-content" style="display: none;">
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>成員</th>
+                            <th>Char 1</th>
+                            <th>Char 2</th>
+                            <th>Char 3</th>
+                            <th>Char 4</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ling</td>
+                            <td>大MT </td>
+                            <td >小MT</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>1110211</td>
+                            <td>大MT</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>Chovy</td>
+                            <td>大PR</td>
+                            <td>小PR</td>
+                            <td>物蘿</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>Nic</td>
+                            <td>  PR</td>
+                            <td>LOLI.phy</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>Alex</td>
+                            <td>PR</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>Tabeee</td>
+                            <td>大魔劍SM</td>
+                            <td>大物劍SM</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>Zutomayo</td>
+                            <td>魔劍SM</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>Snow</td>
+                            <td>EL</td>
+                            <td>LOLI.phy</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>TOBIHI</td>
+                            <td>大MC</td>
+                            <td>小MC</td>
+                            <td>FU</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>YoungNight</td>
+                            <td>FU</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>Java</td>
+                            <td>FU</td>
+                            <td>BM1</td>
+                            <td>BM2</td>
+                            <td>LOLI.matk</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="tuesday" class="day-content" style="display: none;">
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>成員</th>
+                            <th>Char 1</th>
+                            <th>Char 2</th>
+                            <th>Char 3</th>
+                            <th>Char 4</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ling</td>
+                            <td>大MT </td>
+                            <td >小MT</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>1110211</td>
+                            <td>大MT</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>Chovy</td>
+                            <td>大PR</td>
+                            <td>小PR</td>
+                            <td>物蘿</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>Nic</td>
+                            <td>  PR</td>
+                            <td>LOLI.phy</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>Alex</td>
+                            <td>PR</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>Tabeee</td>
+                            <td>大魔劍SM</td>
+                            <td>大物劍SM</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>Zutomayo</td>
+                            <td>魔劍SM</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>Snow</td>
+                            <td>EL</td>
+                            <td>LOLI.phy</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>TOBIHI</td>
+                            <td>大MC</td>
+                            <td>小MC</td>
+                            <td>FU</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>YoungNight</td>
+                            <td>FU</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>Java</td>
+                            <td>FU</td>
+                            <td>BM1</td>
+                            <td>BM2</td>
+                            <td>LOLI.matk</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="wednesday" class="day-content" style="display: none;">
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>成員</th>
+                            <th>Char 1</th>
+                            <th>Char 2</th>
+                            <th>Char 3</th>
+                            <th>Char 4</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ling</td>
+                            <td>大MT </td>
+                            <td >小MT</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>1110211</td>
+                            <td>大MT</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>Chovy</td>
+                            <td>大PR</td>
+                            <td>小PR</td>
+                            <td>物蘿</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>Nic</td>
+                            <td>  PR</td>
+                            <td>LOLI.phy</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>Alex</td>
+                            <td>PR</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>Tabeee</td>
+                            <td>大魔劍SM</td>
+                            <td>大物劍SM</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>Zutomayo</td>
+                            <td>魔劍SM</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>Snow</td>
+                            <td>EL</td>
+                            <td>LOLI.phy</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>TOBIHI</td>
+                            <td>大MC</td>
+                            <td>小MC</td>
+                            <td>FU</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>YoungNight</td>
+                            <td>FU</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>Java</td>
+                            <td>FU</td>
+                            <td>BM1</td>
+                            <td>BM2</td>
+                            <td>LOLI.matk</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="thursday" class="day-content" style="display: none;">
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>成員</th>
+                            <th>Char 1</th>
+                            <th>Char 2</th>
+                            <th>Char 3</th>
+                            <th>Char 4</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ling</td>
+                            <td>大MT </td>
+                            <td >小MT</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>1110211</td>
+                            <td>大MT</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>Chovy</td>
+                            <td>大PR</td>
+                            <td>小PR</td>
+                            <td>物蘿</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>Nic</td>
+                            <td>  PR</td>
+                            <td>LOLI.phy</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>Alex</td>
+                            <td>PR</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>Tabeee</td>
+                            <td>大魔劍SM</td>
+                            <td>大物劍SM</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>Zutomayo</td>
+                            <td>魔劍SM</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>Snow</td>
+                            <td>EL</td>
+                            <td>LOLI.phy</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>TOBIHI</td>
+                            <td>大MC</td>
+                            <td>小MC</td>
+                            <td>FU</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>YoungNight</td>
+                            <td>FU</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>Java</td>
+                            <td>FU</td>
+                            <td>BM1</td>
+                            <td>BM2</td>
+                            <td>LOLI.matk</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="friday" class="day-content" style="display: none;">
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>成員</th>
+                            <th>Char 1</th>
+                            <th>Char 2</th>
+                            <th>Char 3</th>
+                            <th>Char 4</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ling</td>
+                            <td>大MT </td>
+                            <td >小MT</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>1110211</td>
+                            <td>大MT</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>Chovy</td>
+                            <td>大PR</td>
+                            <td>小PR</td>
+                            <td>物蘿</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>Nic</td>
+                            <td>  PR</td>
+                            <td>LOLI.phy</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>Alex</td>
+                            <td>PR</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>Tabeee</td>
+                            <td>大魔劍SM</td>
+                            <td>大物劍SM</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>Zutomayo</td>
+                            <td>魔劍SM</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>Snow</td>
+                            <td>EL</td>
+                            <td>LOLI.phy</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>TOBIHI</td>
+                            <td>大MC</td>
+                            <td>小MC</td>
+                            <td>FU</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>YoungNight</td>
+                            <td>FU</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>Java</td>
+                            <td>FU</td>
+                            <td>BM1</td>
+                            <td>BM2</td>
+                            <td>LOLI.matk</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="saturday" class="day-content" style="display: none;">
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>成員</th>
+                            <th>Char 1</th>
+                            <th>Char 2</th>
+                            <th>Char 3</th>
+                            <th>Char 4</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ling</td>
+                            <td>大MT </td>
+                            <td >小MT</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>1110211</td>
+                            <td>大MT</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>Chovy</td>
+                            <td>大PR</td>
+                            <td>小PR</td>
+                            <td>物蘿</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>Nic</td>
+                            <td>  PR</td>
+                            <td>LOLI.phy</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>Alex</td>
+                            <td>PR</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>Tabeee</td>
+                            <td>大魔劍SM</td>
+                            <td>大物劍SM</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>Zutomayo</td>
+                            <td>魔劍SM</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>Snow</td>
+                            <td>EL</td>
+                            <td>LOLI.phy</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>TOBIHI</td>
+                            <td>大MC</td>
+                            <td>小MC</td>
+                            <td>FU</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>YoungNight</td>
+                            <td>FU</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                            <td class="empty-cell">未分配</td>
+                        </tr>
+                        <tr>
+                            <td>Java</td>
+                            <td>FU</td>
+                            <td>BM1</td>
+                            <td>BM2</td>
+                            <td>LOLI.matk</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const saveButton = document.getElementById('saveButton');
+            const dayNav = document.querySelector('.day-nav');
+            const dayContents = document.querySelectorAll('.day-content');
+            let currentDay = 'sunday'; // Default day
+
+            const getTitleElement = () => document.querySelector(`#${currentDay} h1[contenteditable="true"], h1[contenteditable="true"]`);
+            const getTableBody = () => document.querySelector(`#${currentDay} table tbody`);
+
+            // --- State Management ---
+            const loadStateForDay = (day) => {
+                // Load Title
+                const titleElement = getTitleElement();
+                const savedTitle = localStorage.getItem(`pageTitle-${day}`);
+                if (savedTitle) {
+                    titleElement.innerHTML = savedTitle;
+                } else {
+                    // Reset to a default if no saved title
+                    titleElement.innerHTML = `是日 ${day.charAt(0).toUpperCase() + day.slice(1)} 成團員`;
+                }
+
+                // Load Table Highlights
+                const tableBody = getTableBody();
+                if (!tableBody) return; // No table for this day yet
+                const savedState = JSON.parse(localStorage.getItem(`tableState-${day}`) || '{}');
+                const rows = tableBody.querySelectorAll('tr');
+                rows.forEach((row, rowIndex) => {
+                    const cells = row.querySelectorAll('td');
+                    cells.forEach((cell, cellIndex) => {
+                        if (cellIndex > 0) {
+                            const key = `cell-${rowIndex}-${cellIndex}`;
+                            if (savedState[key]) {
+                                cell.classList.add('highlighted');
+                            } else {
+                                cell.classList.remove('highlighted');
+                            }
+                        }
+                    });
+                });
+            };
+
+            const saveStateForDay = (day) => {
+                // Save Title
+                const titleElement = getTitleElement();
+                localStorage.setItem(`pageTitle-${day}`, titleElement.innerHTML);
+
+                // Save Table Highlights
+                const tableBody = getTableBody();
+                if (!tableBody) return;
+                const stateToSave = {};
+                const rows = tableBody.querySelectorAll('tr');
+                rows.forEach((row, rowIndex) => {
+                    const cells = row.querySelectorAll('td');
+                    cells.forEach((cell, cellIndex) => {
+                        if (cellIndex > 0) {
+                            const key = `cell-${rowIndex}-${cellIndex}`;
+                            stateToSave[key] = cell.classList.contains('highlighted');
+                        }
+                    });
+                });
+                localStorage.setItem(`tableState-${day}`, JSON.stringify(stateToSave));
+            };
+
+            // --- Navigation ---
+            dayNav.addEventListener('click', (event) => {
+                if (event.target.classList.contains('day-btn')) {
+                    const selectedDay = event.target.dataset.day;
+                    if (selectedDay === currentDay) return;
+
+                    // Update active button
+                    dayNav.querySelector('.active').classList.remove('active');
+                    event.target.classList.add('active');
+
+                    // Show/hide content
+                    dayContents.forEach(content => {
+                        content.style.display = 'none';
+                    });
+                    document.getElementById(selectedDay).style.display = 'block';
+
+                    currentDay = selectedDay;
+                    loadStateForDay(currentDay);
+                }
+            });
+
+            // --- Event Listeners ---
+            document.querySelector('.container').addEventListener('click', (event) => {
+                const tableBody = getTableBody();
+                if (tableBody && tableBody.contains(event.target)) {
+                    const target = event.target;
+                    if (target.tagName === 'TD' && target.cellIndex > 0) {
+                        target.classList.toggle('highlighted');
+                    }
+                }
+            });
+
+            saveButton.addEventListener('click', () => {
+                saveStateForDay(currentDay);
+                alert(`${currentDay.charAt(0).toUpperCase() + currentDay.slice(1)}'s changes saved!`);
+            });
+
+            // --- Initial Load ---
+            loadStateForDay(currentDay);
+        });
+    </script>
+</body>
+
+
+   <style>
+        .day-nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .day-btn {
+            padding: 10px 15px;
+            margin: 0 5px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f0f0f0;
+        }
+        .day-btn.active {
+            background-color: #4a69bd;
+            color: white;
+            border-color: #4a69bd;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            margin: 20px 0;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+        
+        .table-container {
+            overflow-x: auto;
+            border-radius: 8px;
+            margin: 0 auto;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border-spacing: 0;
+            font-size: 16px;
+            color: #2c3e50;
+        }
+        
+        th, td {
+            padding: 16px 20px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        th {
+            background: linear-gradient(to bottom, #6a89cc, #4a69bd);
+            color: white;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            position: sticky;
+            top: 0;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        
+        tr:hover {
+            background-color: #edf2f7;
+            transition: background-color 0.2s;
+        }
+
+        td.highlighted {
+            background-color: greenyellow;
+        }
+        
+        .highlight {
+            background-color: #ffeb3b;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+            color: #333;
+            display: inline-block;
+        }
+        
+        .divider {
+            height: 2px;
+            background: linear-gradient(to right, transparent, #4a69bd, transparent);
+            margin: 5px 0;
+        }
+        
+        .empty-cell {
+            color: #aaa;
+            font-style: italic;
+        }
+        
+        @media (max-width: 768px) {
+            th, td {
+                padding: 12px 15px;
+            }
+            
+            .container {
+                padding: 15px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            th, td {
+                padding: 10px 12px;
+                font-size: 14px;
+            }
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+    </style>
+
+</html>
